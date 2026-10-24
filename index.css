@@ -1,0 +1,150 @@
+body{
+  background: rgb(0,0,0);
+}
+
+h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 60px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+
+}
+
+img{
+  display: block;
+  margin: 50px auto;
+  width: 250px;
+  
+  /* animation: topDown 6s;
+  animation-iteration-count: infinite;  */
+}
+
+/* for intro img animatioin */
+@keyframes topDown {
+  from{
+    transform: translate(0px, 4px);
+    filter: drop-shadow(0px 30px 30px rgba(0,20,200,0.3));
+    
+  }
+
+  50%{
+    transform: translate(0px, 60px);
+    filter: drop-shadow(0px 30px 30px rgba(0,20,200,0.5));
+  }
+
+  to{
+    transform: translate(0px, 4px);
+    filter: drop-shadow(0px 30px 30px rgba(0,20,200,0.3));
+  }
+}
+
+/* for outro image animation */
+@keyframes downTop {
+  from{
+    transform: translate(0px, 4px);
+    filter: drop-shadow(0px 30px 30px rgba(0,20,200,0.3));
+  }
+
+  50%{
+    transform: translate(0px, 60px);
+    filter: drop-shadow(0px 30px 30px rgba(0,20,200,0.5));
+  }
+
+  to{
+    transform: translate(0px, 4px);
+    filter: drop-shadow(0px 30px 30px rgba(0,20,200,0.3));
+  }
+  
+}
+
+#error-message-wrapper{
+  height: 22px;
+}
+
+#error-message{
+  color: rgb(228, 234, 244);
+  font-size: 15px;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+#selection-wrapper{
+  text-align: center;
+  height: 40px;
+  
+}
+
+select, ::picker(select) {
+  appearance: base-select;
+}
+
+select{
+    background: rgb(252, 252, 252);
+    backdrop-filter: blur(20px);
+    width: 260px;
+    padding: 20px 10px;
+    border: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+::picker(select){
+  background: rgba(252,252,252,0.9);
+  border: 1px solid rgb(252,252,252);
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+  
+}
+
+select option:hover{
+  background:rgba(20,20,20,0.5);
+  border-radius: 5px;
+  
+}
+
+
+
+#button-wrapper{
+  display: block;
+  text-align: center;
+  background: rgba(178, 176, 187, 0.751);
+  padding: 10px;
+  width: 242px;
+  margin: 30px auto;
+  border-radius: 20px;
+  
+  
+}
+
+
+#start-btn, #stop-btn{
+  color: black;
+  background: rgb(252,252,252);
+  padding: 19px 40px;
+  border: none;
+  border-radius: 30px;
+  margin: 4px;
+}
+
+#start-btn:hover, #stop-btn:hover{
+  box-shadow: 0px 0px 6px rgb(252,252,252);
+}
+
+#start-btn:active, #stop-btn:active{
+  box-shadow: none;
+}
+
+
+#dev-name{
+  color: rgb(200, 200, 200);
+  font-family: verdana;
+  font-size: 15px;
+  text-align: center;
+}
+
